@@ -23,9 +23,13 @@ function init() {
 }
 
 function preload() {
+	// loading texture
+	game.load.image('jeep', '../img/jeep.png');
 }
 
 function create() {
+	// add new player
+	player_list.push(new Car({x:100, y:100}, game, 'jeep'));
 }
 
 function update() {
